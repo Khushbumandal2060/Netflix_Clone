@@ -1,45 +1,66 @@
-.hero{
+.hero {
     position: relative;
 }
-.banner-img{
-    width: 100%;
-    mask-image: linear-gradient(to right, transparant, black 75%);
-    -weblit-mask-image: linear-gradient(to right, transparant, black 75%);
 
+.banner-img {
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
 }
-.hero-caption{
+
+.hero-caption {
     position: absolute;
     width: 100%;
     padding-left: 6%;
     bottom: 0;
 }
-.caption-img{
+
+.caption-img {
     width: 90px;
     max-width: 420px;
     margin-bottom: 30px;
 }
-.hero-caption p{
+
+.hero-caption p {
     max-width: 700px;
     font-size: 17px;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    color: #fff; /* added for better readability on dark backgrounds */
 }
-.hero-btns{
+
+.hero-btns {
     display: flex;
     gap: 10px;
     margin-bottom: 50px;
 }
-.hero-btns .btn img{
+
+.hero-btns .btn img {
     width: 25px;
 }
-.hero-btns .btn{
+
+.hero-btns .btn {
     border: 0;
     outline: 0;
     padding: 8px 20px;
     display: inline-flex;
-    align-items: center
-     gap: 10px;
-     font-size: 15px;
-     font-weight: 600;
-     border-radius: 4px;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
     cursor: pointer;
+   
 }
+
+.hero-btns .btn.dark-btn {
+    background: #6d6d6eb3;
+    color: #fff;
+}
+.hero-btns .btn:hover{
+    background: #ffffffbf;
+}
+.hero-btn .btn.dark-btn:hover{
+    background: #6d6d6e66;
+}
+
+
